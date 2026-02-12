@@ -1,0 +1,13 @@
+import math
+num = float(input("enter your number: "))
+if 0<=num<=9:
+    result = num*num
+    print(f'{result}')
+
+if 10<=num<=99:
+    result = math.sqrt(num)
+    print(f'{result}')
+
+if 100<=num<=999:
+    result = math.cbrt(num)
+    print(f'{result}')

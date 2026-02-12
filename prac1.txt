@@ -1,0 +1,24 @@
+Python 3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> mass = float(input("Enter mass of object in Kilogram: ")
+...              velocity = float(input("enter velocity in meter per second: ")
+...                               
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+>>> mass = float(input("Enter mass of object in Kilogram: "))
+...              velocity = float(input("enter velocity in meter per second: "))
+...                               
+SyntaxError: multiple statements found while compiling a single statement
+>>> mass = float(input("Enter mass of object in Kilogram: "))
+...                               
+Enter mass of object in Kilogram: 23
+>>> velocity = float(input("enter velocity in meter per second: "))
+... 
+enter velocity in meter per second: 20
+>>> momentum = mass*velocity
+...                               
+>>> print(f{momentum})
+...                               
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+>>> print(f'{momentum}')
+...                               
+460.0
