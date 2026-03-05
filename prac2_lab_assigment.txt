@@ -1,0 +1,77 @@
+Python 3.11.2 (tags/v3.11.2:878ead1, Feb  7 2023, 16:38:35) [MSC v.1934 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> #creating a list
+>>> num=[1,3,4,,8,7,6]
+SyntaxError: invalid syntax
+>>> num=[1,3,4,8,7,6]
+>>> #accesing elements in list
+>>> print(num[0])
+1
+>>> #modifying entries in a list
+>>> num[0]=10
+>>> print(num[0])
+10
+>>> #adding new elements
+>>> num.append(12)
+>>> print(num)
+[10, 3, 4, 8, 7, 6, 12]
+>>> #inserting new elements at a specific index
+>>> num.insert(6,13)
+>>> print(num)
+[10, 3, 4, 8, 7, 6, 13, 12]
+>>> #removing elements
+>>> num.remove(1)
+Traceback (most recent call last):
+  File "<pyshell#15>", line 1, in <module>
+    num.remove(1)
+ValueError: list.remove(x): x not in list
+>>> num.remove(10)
+>>> print(num)
+[3, 4, 8, 7, 6, 13, 12]
+>>> # removing elements by index
+>>> num.pop(0)
+3
+print(num)
+[4, 8, 7, 6, 13, 12]
+num.sort
+<built-in method sort of list object at 0x000001EA2171C1C0>
+# sorting
+num.sort()
+print(num)
+[4, 6, 7, 8, 12, 13]
+# reverse
+num.reverse()
+print(num)
+[13, 12, 8, 7, 6, 4]
+# creating dictionary
+
+dict = {
+    "name":"Rudra",
+    "age":18,
+    "course":"python"
+    }
+print(dict)
+{'name': 'Rudra', 'age': 18, 'course': 'python'}
+
+#accesing dictionary
+
+print(dict["name"])
+Rudra
+
+# adding elements
+
+dict["course"]= "Data Science"
+print(dict)
+{'name': 'Rudra', 'age': 18, 'course': 'Data Science'}
+
+#removing element
+
+dict.pop("course")
+'Data Science'
+print(dict)
+{'name': 'Rudra', 'age': 18}
+
+# properly adding
+dict["address"] = "Amravati"
+print(dict)
+{'name': 'Rudra', 'age': 18, 'address': 'Amravati'}
