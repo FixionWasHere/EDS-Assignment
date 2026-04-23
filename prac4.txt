@@ -1,3 +1,0 @@
-num = input("Enter your digit: ")
-reverse = num[::-1]
-print("Reverse: ",reverse)
